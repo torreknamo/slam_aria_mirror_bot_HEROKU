@@ -66,9 +66,9 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         if update.message.chat.type == "private" :
             sendMessage(f"Hey I'm Alive 🙂\nSince: <code>{uptime}</code>", context.bot, update)
         else :
-            update.effective_message.reply_photo(IMAGE_URL, start_string, parse_mode=ParseMode.MARKDOWN, reply_markup=reply_markup)
+            sendMessage(f"Hey I'm Alive 🙂\nSince: <code>{uptime}</code>", context.bot, update)
     else :
-        sendMessage(f"Oops! you are not allowed to use me.", context.bot, update)
+        sendMessage(f"Oops! you are not allowed to use me. CONTACT @anikket123", context.bot, update)
 
 
 def restart(update, context):
